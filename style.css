@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  gap: 1rem;
+  height: 400px;
+  flex-wrap: wrap;
+}
+div {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 0.5rem;
+}
+
+.gallery div:hover {
+  flex: 6;
+}
